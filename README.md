@@ -2,15 +2,13 @@
 
 ![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
 
-An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers).
+An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers), like `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
 
-Some arbitrary examples: `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
+But actually, I made this while [yak shaving](https://en.wiktionary.org/wiki/yak_shaving). Consider this a barebones demonstration of a `Caddy` server running a `Flask` application that is tested with `pytest` on `Github Actions`.
 
-But actually, I made this while [yak shaving](https://en.wiktionary.org/wiki/yak_shaving).
+Recreational use only. 
 
-Recreational use only. Don't use this for anything of any seriousness.
-
-If you're curious, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python)
+For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python)
 
 ## Usage
 
