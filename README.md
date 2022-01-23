@@ -3,9 +3,7 @@ An extremely minimal web API that generates pseudorandom proquints (pronounceabl
 
 But actually, this was just me [yak shaving](https://en.wiktionary.org/wiki/yak_shaving).
 
-Github actions tests this API at 00:00 daily (and on git push)
-
-![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
+See https://github.com/dsw/proquint/tree/master/python for more about proquint.
 
 ## Usage
 
@@ -13,9 +11,16 @@ Github actions tests this API at 00:00 daily (and on git push)
 curl unique.tensorturtle.com
 ```
 
-## About
+## Testing
 
-See https://github.com/dsw/proquint/tree/master/python for more about proquint.
+Locally:
+```
+pytest -s
+```
+
+Github actions tests this API at 00:00 daily (and on git push):
+
+![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
 
 ## Server Setup
 
