@@ -110,3 +110,4 @@ Github actions tests this API at 00:00 daily (and on git push). See badge above.
 ## Coming soon(ish)
 
 + POST 
++ Traffic monitioring
