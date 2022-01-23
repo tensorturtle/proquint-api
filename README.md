@@ -13,7 +13,7 @@ See https://github.com/dsw/proquint/tree/master/python for more about proquint.
 
 ## Server Setup
 
-Starting with Ubuntu 18.04. Username: 'deploy'
+Starting with Ubuntu 18.04. Example username: 'angela'
 
 Install Caddy server: https://caddyserver.com/docs/install
 
@@ -34,7 +34,7 @@ http://unique.tensorturtle.com {
 	reverse_proxy localhost:17777
 }
 :18080 {
-	root * /home/deploy/www
+	root * /home/angela/www
 	file_server
 }
 # Refer to the Caddy docs for more information:
@@ -59,7 +59,7 @@ Upload website `index.html` to `~/www`.
 The home directory would look something like this:
 
 ```
-.
+/home/angela
 ├── proquint-api
 │   ├── app.py
 │   └── requirements.txt
@@ -78,7 +78,7 @@ After=multi-user.target
 Type=simple
 User=deploy
 Restart=always
-ExecStart=/usr/bin/python3 /home/deploy/proquint-api/app.py
+ExecStart=/usr/bin/python3 /home/angela/proquint-api/app.py
 
 [Install]
 WantedBy=multi-user.target
