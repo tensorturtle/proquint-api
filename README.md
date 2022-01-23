@@ -13,33 +13,11 @@ See https://github.com/dsw/proquint/tree/master/python for more about proquint.
 
 ## Server Setup
 
-Ubuntu 18.04 with Caddy and Python 3.6.
+Starting with Ubuntu 18.04. Username: 'deploy'
 
-## Configurations
+Install Caddy server: https://caddyserver.com/docs/install
 
-**Systemd unit file**
-
-Located in `/etc/systemd/system/proquint.service`
-
-```
-[Unit]
-Description=Python Flask server for proquint
-After=multi-user.target
-
-[Service]
-Type=simple
-User=deploy
-Restart=always
-ExecStart=/usr/bin/python3 /home/deploy/proquint-api/app.py
-
-[Install]
-WantedBy=multi-user.target
-```
-
-**Caddyfile**
-
-Located in `/etc/caddy/Caddyfile`
-
+Replace the Caddyfile in `/etc/caddy/Caddyfile` with:
 ```
 # The Caddyfile is an easy way to configure your Caddy web server.
 
@@ -61,4 +39,54 @@ http://unique.tensorturtle.com {
 }
 # Refer to the Caddy docs for more information:
 # https://caddyserver.com/docs/caddyfile
+```
+
+From home directory, clone this repo
+
+```bash
+git clone https://github.com/tensorturtle/proquint-api.git
+```
+
+Install pip and this repo's required packages.
+
+```bash
+sudo apt install python3-pip
+python3 -m pip install -r requirements.txt
+```
+
+Upload website `index.html` to `~/www`.
+
+The home directory would look something like this:
+
+```
+.
+├── proquint-api
+│   ├── app.py
+│   └── requirements.txt
+└── www
+    └── index.html
+```
+
+In the `/etc/systemd/system` directory, create a file named `proquint.service` containing:
+
+```
+[Unit]
+Description=Python Flask server for proquint
+After=multi-user.target
+
+[Service]
+Type=simple
+User=deploy
+Restart=always
+ExecStart=/usr/bin/python3 /home/deploy/proquint-api/app.py
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Start systemd service:
+```bash
+sudo systemctl reload-daemons
+sudo systemctl enable proquint.service
+sudo systemctl start proquint.service
 ```
