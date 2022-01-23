@@ -19,23 +19,25 @@ Install Caddy server: https://caddyserver.com/docs/install
 
 Replace the Caddyfile in `/etc/caddy/Caddyfile` with:
 ```
-# The Caddyfile is an easy way to configure your Caddy web server.
-
 # static personal website
 tensorturtle.com {
-	reverse_proxy localhost:18080
+        reverse_proxy localhost:18080
 }
 # python unique proquint generator API
 #
-# 'http://' prefix makes Caddy to serve on http, not https.
-# When served on http, 'curl unique.tensorturtle.com' works.
-# if omitted, it is served on https, and 'curl https://unique.tensorturtle.com' is required.
+
+# http backwards compatibility for curl
+# 'curl unique.tensorturtle.com'
 http://unique.tensorturtle.com {
-	reverse_proxy localhost:17777
+        reverse_proxy localhost:17777
+}
+# https for browsers
+https://unique.tensorturtle.com {
+        reverse_proxy localhost:17777
 }
 :18080 {
-	root * /home/angela/www
-	file_server
+        root * /home/deploy/www
+        file_server
 }
 # Refer to the Caddy docs for more information:
 # https://caddyserver.com/docs/caddyfile
