@@ -8,7 +8,7 @@ Some arbitrary examples: `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
 
 But actually, I made this while [yak shaving](https://en.wiktionary.org/wiki/yak_shaving).
 
-Recreational use only. Don't use for anything of any seriousness.
+Recreational use only. Don't use this for anything of any seriousness.
 
 If you're curious, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python)
 
