@@ -76,7 +76,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-User=deploy
+User=angela
 Restart=always
 ExecStart=/usr/bin/python3 /home/angela/proquint-api/app.py
 
