@@ -1,10 +1,7 @@
 # proquint-api
 An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers).
 
-Example:
-```
-darun-kajos
-```
+Some arbitrary examples: `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
 
 But actually, this was just me [yak shaving](https://en.wiktionary.org/wiki/yak_shaving).
 
