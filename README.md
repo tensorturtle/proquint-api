@@ -12,7 +12,7 @@ For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the py
 
 ## Usage
 
-[Install curl for your computer](https://curl.se/download.html)
+Install `curl`. Then,
 
 ```
 curl unique.tensorturtle.com
