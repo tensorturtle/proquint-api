@@ -10,6 +10,8 @@ on:
     branches: [ main ]
   schedule:
       - cron: '0 0 * * *' # daily at 00:00
+  paths-ignore:
+      - '**/README.md'
 
 jobs:
   build:
