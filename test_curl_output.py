@@ -13,4 +13,4 @@ def test_curl_api(url='unique.tensorturtle.com'):
     assert curl_api(url) is not None
 
 if __name__ == "__main__":
-    test_curl_api
+    test_curl_api()
