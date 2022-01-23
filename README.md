@@ -16,15 +16,6 @@ See https://github.com/dsw/proquint/tree/master/python for more about proquint.
 curl unique.tensorturtle.com
 ```
 
-## Testing
-
-Locally:
-```
-pytest -s
-```
-
-Github actions tests this API at 00:00 daily (and on git push). See badge above.
-
 ## Server Setup
 
 Starting with Ubuntu 18.04. Example username: 'angela'
@@ -109,6 +100,9 @@ sudo systemctl start proquint.service
 
 ## Testing
 
+Locally:
 ```
 pytest -s
 ```
+
+Github actions tests this API at 00:00 daily (and on git push). See badge above.
