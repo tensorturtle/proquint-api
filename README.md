@@ -1,7 +1,7 @@
 # proquint-api
 An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers)
 
-![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api/badge.svg)
+![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
 
 ## Usage
 
