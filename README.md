@@ -8,7 +8,7 @@ But actually, I made this while [yak shaving](https://en.wiktionary.org/wiki/yak
 
 Recreational use only. 
 
-For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python)
+For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python).
 
 ## Usage
 
