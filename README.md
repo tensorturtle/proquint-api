@@ -1,5 +1,5 @@
 # proquint-api
-An extremely minimal API that generates pseudorandom proquints (pronounceable hash-like identifiers)
+An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers)
 
 ## Usage
 
