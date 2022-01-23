@@ -1,12 +1,16 @@
 import re
+import subprocess
 
-def test_curl_output():
-    with open('curl_output.txt', 'r') as f:
-        output = f.readline()
+def curl_api(url):
+    cmd = f"curl {url}"
     pattern = "[a-z]{5}-[a-z]{5}"
-    re_result = re.match(pattern, output)
+    curl_output = subprocess.check_output(cmd, shell=True, text=True)
+    re_result = re.match(pattern, curl_output)
     print(re_result)
-    assert re_result is not None
+    return re_result
+
+def test_curl_api(url='unique.tensorturtle.com'):
+    assert curl_api(url) is not None
 
 if __name__ == "__main__":
-    test_curl_output()
+    test_curl_api

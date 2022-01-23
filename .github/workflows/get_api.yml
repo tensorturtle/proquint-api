@@ -29,9 +29,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Get API with curl
-      run: | 
-        curl unique.tensorturtle.com > curl_output.txt
+    - name: Install curl
+      run: |
+          sudo apt install curl
     - name: Test with pytest
       run: |
-        pytest -s
+          pytest -s
