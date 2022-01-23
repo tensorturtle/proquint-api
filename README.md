@@ -3,7 +3,7 @@ An extremely minimal web API that generates pseudorandom proquints (pronounceabl
 
 Some arbitrary examples: `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
 
-But actually, this was just me [yak shaving](https://en.wiktionary.org/wiki/yak_shaving).
+But actually, I made this while [yak shaving](https://en.wiktionary.org/wiki/yak_shaving).
 
 See https://github.com/dsw/proquint/tree/master/python for more about proquint.
 
