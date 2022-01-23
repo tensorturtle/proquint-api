@@ -1,19 +1,20 @@
 # proquint-api
-An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers)
-
-Github actions test this API at 00:00 daily (and on git pushes)
 
 ![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
+
+An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers), like `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
+
+But actually, I made this while [yak shaving](https://en.wiktionary.org/wiki/yak_shaving). Consider this a barebones demonstration of a `Caddy` server running a `Flask` application that is tested with `pytest` on `Github Actions`.
+
+Recreational use only. 
+
+For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python).
 
 ## Usage
 
 ```
 curl unique.tensorturtle.com
 ```
-
-## About
-
-See https://github.com/dsw/proquint/tree/master/python for more about proquint.
 
 ## Server Setup
 
@@ -99,6 +100,14 @@ sudo systemctl start proquint.service
 
 ## Testing
 
+Locally:
 ```
 pytest -s
 ```
+
+Github actions tests this API at 00:00 daily (and on git push). See badge above.
+
+## Coming soon(ish)
+
++ POST 
++ Traffic monitoring
