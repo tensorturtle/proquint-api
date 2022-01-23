@@ -11,7 +11,6 @@ Recreational use only.
 For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the python implementation used here](https://github.com/dsw/proquint/tree/master/python).
 
 ## Usage
-
 ```
 curl unique.tensorturtle.com
 ```
