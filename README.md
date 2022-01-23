@@ -1,6 +1,8 @@
 # proquint-api
 An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers).
 
+But actually, this was just me [yak shaving.](https://en.wiktionary.org/wiki/yak_shaving).
+
 Github actions test this API at 00:00 daily (and on git pushes)
 
 ![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
