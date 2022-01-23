@@ -96,3 +96,9 @@ sudo systemctl reload-daemons
 sudo systemctl enable proquint.service
 sudo systemctl start proquint.service
 ```
+
+## Testing
+
+```
+pytest -s
+```
