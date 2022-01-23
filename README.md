@@ -1,4 +1,7 @@
 # proquint-api
+
+![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
+
 An extremely minimal web API that generates pseudorandom proquints (pronounceable hash-like identifiers).
 
 Some arbitrary examples: `darun-kajos`, `lakoh-rohir`, `tuvav-furim`
@@ -20,9 +23,7 @@ Locally:
 pytest -s
 ```
 
-Github actions tests this API at 00:00 daily (and on git push):
-
-![GET API](https://github.com/tensorturtle/proquint-api/actions/workflows/get_api.yml/badge.svg)
+Github actions tests this API at 00:00 daily (and on git push). See badge above.
 
 ## Server Setup
 
