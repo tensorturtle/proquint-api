@@ -12,6 +12,10 @@ For more info, [read the paper](https://arxiv.org/html/0901.4016) or [see the py
 
 ## Usage
 
+https://unique.tensorturtle.com
+
+or
+
 ```
 curl unique.tensorturtle.com
 ```
